@@ -491,7 +491,7 @@ li {
 }
 
 .navbar {
-  overflow: auto;
+  overflow: hidden;
   display: flex;
   background-color: #f81b84;
   justify-content: center;
