@@ -468,6 +468,7 @@ img {
 
 body {
   font-family: 'Fira Sans Condensed', sans-serif;
+  background-color: #f2eee2;
 }
 
 h1 {
@@ -478,10 +479,21 @@ h2 {
   font-size: 1.5em;
 }
 
+p {
+  font-size: 1em;
+  margin: 5px;
+  border: 5px;
+  padding: 5px;
+}
+
+li {
+  font-size: 1em;
+}
+
 .navbar {
   overflow: hidden;
   display: flex;
-  background-color: #f39c12;
+  background-color: #f81b84;
   justify-content: center;
   position: sticky; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
@@ -527,6 +539,7 @@ h2 {
   margin: 15px;
   border-bottom: 15px;
   padding-bottom: 15px;
+  background-color: #f5ce28;
 }
 
 .image2 {
@@ -534,6 +547,7 @@ h2 {
   margin: 15px;
   border-bottom: 15px;
   padding-bottom: 15px;
+  background-color: #43c0f6;
 }
 
 .image3 {
@@ -541,6 +555,7 @@ h2 {
   margin: 15px;
   border-bottom: 15px;
   padding-bottom: 15px;
+  background-color: #f5ce28;
 }
 
 .containerimagesbottom {
@@ -556,6 +571,7 @@ h2 {
   margin: 15px;
   border-bottom: 15px;
   padding-bottom: 15px;
+  background-color: #43c0f6;
 }
 
 .image5 {
@@ -563,12 +579,14 @@ h2 {
   margin: 15px;
   border-bottom: 15px;
   padding-bottom: 15px;
+  background-color: #f5ce28;
 }
 .image6 {
   flex: 1;
   margin: 15px;
   border-bottom: 15px;
   padding-bottom: 15px;
+  background-color: #43c0f6;
 }
 
 
@@ -599,6 +617,7 @@ h2 {
   margin: 15px;
   border: 15px;
   padding: 15px;
+  background-color: #f5ce28;
 }
 
 .why{
@@ -606,6 +625,7 @@ h2 {
   margin: 15px;
   border: 15px;
   padding: 15px;
+  background-color: #43c0f6;
 }
 
 .features{
@@ -613,9 +633,11 @@ h2 {
   margin: auto;
   border: 15px;
   padding: 15px;
+  background-color: #f5ce28;
 }
 
 footer {
   display: flex;
   justify-content: center;
+  background-color: #f81b84;
 }
