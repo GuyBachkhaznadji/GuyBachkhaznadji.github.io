@@ -467,7 +467,7 @@ img {
 }
 
 body {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', 'Open Sans', sans-serif;
   background-color: #f2eee2;
 }
 
@@ -491,7 +491,7 @@ li {
 }
 
 .navbar {
-  overflow: hidden;
+  overflow: auto;
   display: flex;
   background-color: #f81b84;
   justify-content: center;
