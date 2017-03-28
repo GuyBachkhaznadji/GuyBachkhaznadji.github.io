@@ -522,6 +522,9 @@ li {
 
 }
 
+.smalltitle {
+  font-weight: bold;
+}
 
 .containerimages {
   display: flex;
@@ -552,7 +555,7 @@ li {
 }
 
 .image2 {
-  flex: 1;
+  flex: 2;
   margin: 15px;
   border-bottom: 15px;
   padding-bottom: 15px;
