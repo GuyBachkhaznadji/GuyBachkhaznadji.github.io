@@ -460,7 +460,10 @@ template {
   display: none;
 }
 
-
+a {
+  color: white;
+  text-decoration: none;
+}
 
 img {
   max-width: 100%;
@@ -505,7 +508,7 @@ li {
   position: fixed;; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  color: #ecf0f1;
+  color: white;
 }
 
 
@@ -653,4 +656,5 @@ footer {
   display: flex;
   justify-content: center;
   background-color: #f81b84;
+  color: white;
 }
