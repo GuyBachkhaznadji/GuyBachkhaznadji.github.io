@@ -1,0 +1,9 @@
+[
+null,
+{"id":1,"battlerName":"Playable 1","characterIndex":0,"characterName":"Playable Character","classId":1,"equips":[1,0,0,1,0],"faceIndex":0,"faceName":"Playable Character","traits":[],"initialLevel":1,"maxLevel":99,"name":"Ember","nickname":"","note":"","profile":""},
+{"id":2,"battlerName":"Playable 2","characterIndex":1,"characterName":"Playable Character","classId":3,"equips":[1,0,0,1,0],"faceIndex":1,"faceName":"Playable Character","traits":[],"initialLevel":1,"maxLevel":99,"name":"Fry","nickname":"","note":"","profile":""},
+{"id":3,"battlerName":"Playable 3","characterIndex":2,"characterName":"Playable Character","classId":2,"equips":[1,0,0,1,0],"faceIndex":2,"faceName":"Playable Character","traits":[],"initialLevel":1,"maxLevel":99,"name":"Lumi","nickname":"","note":"","profile":""},
+{"id":4,"battlerName":"","characterIndex":5,"characterName":"!Flame","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":1,"name":"Character Selection","nickname":"","note":"","profile":""},
+{"id":5,"battlerName":"Actor1_3","characterIndex":2,"characterName":"Actor1","classId":6,"equips":[4,0,17,2,0],"faceIndex":2,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Libum","nickname":"","note":"","profile":"A companion who joined your cause at the pub."},
+{"id":6,"battlerName":"Actor3_7","characterIndex":6,"characterName":"Actor3","classId":4,"equips":[4,0,16,1,0],"faceIndex":6,"faceName":"Actor3","traits":[],"initialLevel":1,"maxLevel":99,"name":"Panem","nickname":"","note":"","profile":"A companion who joined your cause at the pub."}
+]
