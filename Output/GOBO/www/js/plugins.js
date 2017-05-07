@@ -6,5 +6,8 @@ var $plugins =
 {"name":"YEP_X_VisualHpGauge","status":true,"description":"v1.06 (Requires YEP_BattleEngineCore.js) Reveal HP Gauges\nwhen a battler is selected or takes damage in battle.","parameters":{"---General---":"","Display Actor":"true","Defeat First":"false","Always Visible":"false","---Appearance---":"","Minimum Gauge Width":"144","Gauge Height":"18","Back Color":"19","HP Color 1":"20","HP Color 2":"21","Gauge Duration":"30","Gauge Position":"false","Y Buffer":"-16","Use Thick Gauges":"true","---Text Display---":"","Show HP":"false","Show Value":"false","Show Max":"false"}},
 {"name":"AltMenuScreen","status":true,"description":"Alternative menu screen layout.","parameters":{}},
 {"name":"EnemyBook","status":true,"description":"Displays detailed statuses of enemies.","parameters":{"Unknown Data":"??????"}},
-{"name":"AltSaveScreen","status":true,"description":"Alternative save/load screen layout.","parameters":{}}
+{"name":"AltSaveScreen","status":true,"description":"Alternative save/load screen layout.","parameters":{}},
+{"name":"animatedSVEnemies","status":true,"description":"Version: 1.15.5.1 - The Re-Remake\n- Lets enemies be animated!","parameters":{"Debug":"true","No Movement":"false","Enemies Celebrate":"true","SV Enemies Collapse":"false","Static Enemies Breathe":"true","AGI Effects Breathing":"true","Scale Statics by Distance":"true","Damage Slows Down Breathing":"true"}},
+{"name":"animatedSVEnemiesYanflyEnginePatch","status":true,"description":"Version: 1.016\n- Makes animatedSVEnemies compatible with Yanfly's plugins.","parameters":{}},
+{"name":"GALV_VisibilityRange","status":true,"description":"(v.1.2) Use an image to display a visibility range image around the player's position","parameters":{"Zoom Variable":"0","Opacity Variable":"0","Z Position":"10"}}
 ];

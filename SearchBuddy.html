@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Search Buddy</title>
+  <link rel="stylesheet" href="SearchBuddy.css">
+</head>
+  <body>
+    <main>
+      <section class="text_container">
+        <p>Search Buddy is a unique tailored tool to help you search for candidates.</p>
+        <p>All you need to do is insert the relevant job title and role profile and Search Buddy will do the rest.</p>
+        <p>Search Buddy will produce a search based on the key words in the role profile that relate to that job title to do 3 things:</p>
+        <ul>
+          <li>Give you a good starting point for your search.</li>
+          <li>Identify most of the key words in that role profile that are relevant to this job.</li>
+          <li>Produce a usable search to find the best candidates.</li>
+        </ul>
+      </section class="user_form">
+      <form action="/action_page.php" method="post">
+        Job Title:<br>
+        <input type="text" name="jobtitle"><br>
+        Role Profile:<br>
+        <textarea type="input" name="roleprofile" rows="10" cols="30">
+          </textarea>
+        <button onclick="myFunction()">Submit</button>
+      </form>
+      <%="write_search()" %>
+          <!-- <button onclick="myFunction()">Submit</button>
+
+      </section>
+    </main>
+  </body>
+</html>
