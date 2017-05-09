@@ -1,6 +1,3 @@
-require_relative('./search_data')
-require SEARCHES
-SEARCHES = $searches
 
 def get_job_title(user_job_title)
   if user_job_title.length == 2 ||user_job_title.length == 3
@@ -19,7 +16,7 @@ def get_job_spec(user_job_spec)
  return job_spec
 end
 
-def rank_words(user_job_spec, $searches)
+def rank_words(user_job_spec, searches)
   job_spec = []
   user_job_spec = user_job_spec.to_s
   user_job_spec = user_job_spec.gsub(/[',.]/,"")
@@ -33,9 +30,9 @@ def rank_words(user_job_spec, $searches)
   return frequencies
 end
 
-def match_job_title(job_title, $searches)
+def match_job_title(job_title, searches)
  matched_job_title = []
-  for search in $searches
+  for search in searches
     if search[:title].include? job_title
       matched_job_title << search[:title][0]
     end
@@ -43,12 +40,12 @@ def match_job_title(job_title, $searches)
  return matched_job_title[0]
 end
 
-def match_key_words(job_title, job_spec, $searches)
+def match_key_words(job_title, job_spec, searches)
  key_words = []
  all_key_words = Hash.new
- matched_job_title = match_job_title(job_title, $searches)
+ matched_job_title = match_job_title(job_title, searches)
  words_list = get_job_spec(job_spec)
- for search in $searches
+ for search in searches
    if search[:title][0] == matched_job_title
      all_key_words = all_key_words.merge(search[:key_words])
      all_key_words = all_key_words.values.to_a
@@ -66,9 +63,9 @@ def match_key_words(job_title, job_spec, $searches)
  return key_words.sort
 end
 
-def match_job_title2(job_title, $searches)
+def match_job_title2(job_title, searches)
  matched_job_title = []
-  for search in $searches
+  for search in searches
     if search[:title].include? job_title
       matched_job_title << search[:title][0]
     end
@@ -76,7 +73,7 @@ def match_job_title2(job_title, $searches)
  return matched_job_title[0]
 end
 
-def rank_words2(key_words, $searches)
+def rank_words2(key_words, searches)
   frequencies = Hash.new(0)
   key_words.each { |word| frequencies[word] += 1 }
   frequencies = frequencies.sort_by {|a, b| b }
@@ -84,10 +81,10 @@ def rank_words2(key_words, $searches)
   return frequencies
 end
 
-def job_key_words(job_title, $searches)
-  matched_job_title = match_job_title(job_title, $searches)
+def job_key_words(job_title, searches)
+  matched_job_title = match_job_title(job_title, searches)
   all_key_words = Hash.new
-  for search in $searches
+  for search in searches
     if search[:title][0] == matched_job_title
       all_key_words = all_key_words.merge(search[:key_words])
       all_key_words = all_key_words.values.to_a
@@ -97,14 +94,14 @@ def job_key_words(job_title, $searches)
   return all_key_words.sort
 end
 
-def write_search(job_title, job_spec, $searches)
+def write_search(job_title, job_spec, searches)
   written_search = []
   written_search_collect = []
   written_search_collect2 =[]
   written_search_collect3 =[]
-  matched_job_title = match_job_title(job_title, $searches)
-  needed_key_words = match_key_words(job_title, job_spec, $searches)
-  all_key_words = job_key_words(job_title, $searches)
+  matched_job_title = match_job_title(job_title, searches)
+  needed_key_words = match_key_words(job_title, job_spec, searches)
+  all_key_words = job_key_words(job_title, searches)
   for key_words in all_key_words
     for needed_word in needed_key_words
      if key_words.include? needed_word

@@ -17,17 +17,16 @@
           <li>Identify most of the key words in that role profile that are relevant to this job.</li>
           <li>Produce a usable search to find the best candidates.</li>
         </ul>
-      </section class="user_form">
-      <form action="/action_page.php" method="post">
+      </section>
+      <section class="user_form">
+      <form action="./SearchBuddy/search_runner.rb" method="post">
         Job Title:<br>
-        <input type="text" name="jobtitle"><br>
+        <input type="text" name="job_title"><br>
         Role Profile:<br>
-        <textarea type="input" name="roleprofile" rows="10" cols="30">
+        <textarea type="input" name="job_spec" rows="10" cols="30">
           </textarea>
-        <button onclick="myFunction()">Submit</button>
+        <button>Submit</button>
       </form>
-      <%="write_search()" %>
-          <!-- <button onclick="myFunction()">Submit</button>
 
       </section>
     </main>
