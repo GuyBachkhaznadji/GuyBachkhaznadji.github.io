@@ -636,7 +636,7 @@ li {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   margin: 15px;
 }
 
@@ -662,7 +662,7 @@ li {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   margin: 15px;
 }
 
