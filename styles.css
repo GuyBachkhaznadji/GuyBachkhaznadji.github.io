@@ -561,6 +561,7 @@ li {
 
 .containerimagestop {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   margin: 15px;
   border-bottom: 15px;
@@ -571,6 +572,7 @@ li {
 .image1 {
   flex: 1;
   margin: 15px;
+  flex-wrap: wrap;
   border-bottom: 15px;
   padding-bottom: 15px;
   background-color: #f5ce28;
@@ -579,17 +581,10 @@ li {
 .image2 {
   flex: 2;
   margin: 15px;
+  flex-wrap: wrap;
   border-bottom: 15px;
   padding-bottom: 15px;
   background-color: #43c0f6;
-}
-
-.image3 {
-  flex: 1;
-  margin: 15px;
-  border-bottom: 15px;
-  padding-bottom: 15px;
-  background-color: #f5ce28;
 }
 
 .containerimagesbottom {
@@ -627,6 +622,7 @@ li {
 .containertext {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   margin: 10px;
@@ -635,22 +631,20 @@ li {
 }
 
 .lefttext {
-  flex: 2;
+  flex: 1;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 10px;
-  border: 10px;
-  padding: 10px;
-
+  margin: 15px;
 }
 
 .whatis {
   flex: 1;
-  margin: 10px;
-  border: 10px;
-  padding: 10px;
+  margin: 15px;
+  border: 15px;
+  padding: 15px;
   background-color: #f5ce28;
 }
 
@@ -662,9 +656,27 @@ li {
   background-color: #43c0f6;
 }
 
+.righttext {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px;
+}
+
 .features{
-  flex: 3;
-  margin: auto;
+  flex: 2;
+  margin: 15px;
+  border: 15px;
+  padding: 15px;
+  background-color: #43c0f6;
+}
+
+.tech_stuff{
+  flex: 1;
+  margin: 15px;
   border: 15px;
   padding: 15px;
   background-color: #f5ce28;
