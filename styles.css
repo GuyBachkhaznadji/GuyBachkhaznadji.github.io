@@ -682,6 +682,24 @@ li {
   background-color: #f5ce28;
 }
 
+@media all and ( max-width: 1000px ) {
+
+  .containerimagestop {
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  li {
+    font-size: 1.5em;
+  }
+  .containertext {
+    flex-direction: column;
+  }
+}
+
 footer {
   display: flex;
   justify-content: center;
